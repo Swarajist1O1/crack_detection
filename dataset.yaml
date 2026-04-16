@@ -1,0 +1,18 @@
+# Road Crack Detection — YOLOv8 Segmentation Dataset
+# Place this file at the project root alongside data/
+
+path: ./data          # root of dataset
+train: images/train
+val:   images/val
+test:  images/test
+
+nc: 3                 # number of crack classes
+names:
+  0: longitudinal_crack    # runs along road direction
+  1: transverse_crack      # runs across road direction
+  2: alligator_crack       # interconnected / fatigue cracking
+
+# Optional: per-class colour for visualisation (BGR)
+# 0: [0, 0, 255]    # red
+# 1: [0, 165, 255]  # orange
+# 2: [0, 255, 255]  # yellow
