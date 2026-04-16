@@ -14,7 +14,7 @@ from ultralytics import YOLO
 
 def parse_args():
     p = argparse.ArgumentParser(description="Train YOLOv8-seg on road crack data")
-    p.add_argument("--model",   default="yolov8m-seg.pt",
+    p.add_argument("--model",   default="yolov8m-seg.pt",                   
                    help="Backbone: yolov8n/s/m/l/x-seg.pt  (n=fastest, x=best)")
     p.add_argument("--data",    default="dataset.yaml")
     p.add_argument("--epochs",  type=int, default=100)
